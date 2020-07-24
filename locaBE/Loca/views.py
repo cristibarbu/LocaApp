@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+
 
 # Create your views here.
 def indexView(request):
@@ -19,5 +21,4 @@ def registerView(request):
     else:
         form = UserCreationForm()
 
-    return render(request, 'registration/register.html',{'form':form})
-
+    return render(request, 'registration/register.html', {'form':form})

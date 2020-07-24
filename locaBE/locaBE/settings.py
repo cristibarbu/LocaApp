@@ -120,4 +120,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/Loca/dashboard/' 
-LOGOUT_REDIRECT_URL = '/accounts/dashboard/'
+LOGOUT_REDIRECT_URL = '/Loca/'
+
